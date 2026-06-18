@@ -1,0 +1,21 @@
+/* ═══════════════════════════════
+   MainLayout.css
+═══════════════════════════════ */
+
+.layout {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  height: calc(100vh - 56px); /* ← высота экрана минус высота хедера */
+}
+
+.layout-content {
+  flex: 1;
+  overflow-y: auto;   /* ← скролл только в контентной зоне */
+} 
+
+@media (max-width: 768px) {
+  .layout {
+    overflow: visible;
+  }
+}

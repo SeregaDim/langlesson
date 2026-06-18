@@ -1,0 +1,152 @@
+/* ═══════════════════════════════
+   Header.css
+═══════════════════════════════ */
+
+header {
+  height: 56px;
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  gap: 16px;
+  flex-shrink: 0;
+  z-index: 200;
+  position: relative;
+}
+.theme-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.logo {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--accent);
+  letter-spacing: -0.5px;
+  flex-shrink: 0;
+}
+.logo em { color: var(--green); font-style: normal; }
+
+/* Burger — только на мобильном */
+.burger-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 8px;
+  flex-shrink: 0;
+}
+.burger-btn span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--muted);
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+
+/* Кнопки тем */
+.header-topics {
+  display: flex;
+  gap: 6px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.htopic {
+  padding: 5px 14px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  transition: all 0.18s;
+  white-space: nowrap;
+  font-family: 'Fira Code', monospace;
+}
+.htopic:hover  { background: var(--panel2); color: var(--text); border-color: var(--accent); }
+.htopic.active { background: var(--accent-glow); color: var(--accent); border-color: var(--accent); }
+.htopic.done   { color: var(--green); }
+
+/* Right side */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.xp-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: var(--yellow);
+  background: rgba(234,179,8,0.1);
+  border: 1px solid rgba(234,179,8,0.25);
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.streak {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.user-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--green));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  color: white;
+  font-family: 'Syne', sans-serif;
+  flex-shrink: 0;
+}
+
+.pro-btn {
+  padding: 5px 14px;
+  background: linear-gradient(135deg, #7c3aed, #3b82f6);
+  border: none;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  font-family: 'Fira Code', monospace;
+  transition: opacity 0.2s;
+}
+.pro-btn:hover { opacity: 0.85; }
+
+/* ─── Mobile header ─── */
+@media (max-width: 768px) {
+  .burger-btn { display: flex; }
+  .header-topics { display: none; }       /* темы убираем из шапки */
+  .streak { display: none; }
+  .xp-badge { padding: 4px 8px; font-size: 10px; }
+  .pro-btn { padding: 5px 10px; font-size: 10px; }
+}
+
+@media (max-width: 420px) {
+  .xp-badge { display: none; }
+}
