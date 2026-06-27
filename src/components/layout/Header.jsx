@@ -20,7 +20,7 @@ export default function Header({ onBurgerClick, theme, setTheme }) {
         <span /><span /><span />
       </button>
 
-      <div className="logo"><Link to="/">Py<em>Learn</em></Link></div>
+      <div className="logo"><Link to="/">Linux<em>Learn</em></Link></div>
 
       <nav className="header-topics">
         {TOPICS.map(({ label, href }) => (
