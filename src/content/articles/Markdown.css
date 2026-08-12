@@ -1,0 +1,38 @@
+.article-content {
+  line-height: 1.7;
+}
+
+.article-content h1,
+.article-content h2,
+.article-content h3 {
+  margin-top: 30px;
+}
+
+.article-content p {
+  margin-bottom: 16px;
+}
+
+.article-content code {
+  background: #222;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+
+.article-content pre {
+  padding: 15px;
+  overflow-x: auto;
+}
+
+.article-content ul,
+.article-content ol {
+  padding-left: 25px;
+}
+
+.article-content blockquote {
+  border-left: 4px solid gray;
+  padding-left: 15px;
+}
+
+.article-content table {
+  border-collapse: collapse;
+}

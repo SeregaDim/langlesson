@@ -21,6 +21,7 @@
   padding: 0 24px;
   gap: 12px;
   flex-shrink: 0;
+  min-width: 0;
 }
 
 .breadcrumb {
@@ -32,6 +33,7 @@
   flex: 1;
   overflow: hidden;
   white-space: nowrap;
+  min-width: 0;
 }
 .breadcrumb .sep { color: var(--border); }
 .breadcrumb .cur { color: var(--accent); }

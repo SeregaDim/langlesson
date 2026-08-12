@@ -7,7 +7,7 @@ import { Outlet } from 'react-router-dom';
 
 export default function MainLayout() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState('light');
     useEffect(() => {
         document.documentElement.setAttribute('data-theme', theme);
         }, [theme]);

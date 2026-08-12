@@ -1,11 +1,13 @@
 import { useState } from 'react';
-import FirstData from './first_teme';
+import KernelArticle from './Linux/KernelArticle';
 import './Articles.css';
 
 const SECTIONS = [
-  { label: 'Введение', content: <FirstData /> },
-  { label: 'Основы', content: <p>options article</p> },
-  { label: 'Практика', content: <p>Текст практики...</p> },
+  { label: 'Что такое ядро и дистрибутив — разница', content: <KernelArticle /> },
+  { label: 'Семейства: Debian, Red Hat, Arch — родословная', content: <p>options article</p> },
+  { label: 'Дистрибутивы: Ubuntu, Debian, Fedora, CentOS, Arch, Rocky', content: <p>Текст практики...</p> },
+  { label: 'Как выбрать дистрибутив под задачу', content: <p>Текст практики...</p> },
+  { label: 'Установка Ubuntu — разметка диска, GRUB, первый запуск', content: <p>Текст практики...</p> },
 ];
 
 let title = '📦 Структуры данных · Тема 3 из 5';
@@ -22,13 +24,13 @@ function Articles() {
       {/* Переключатели разделов */}
       <div className="section-tabs">
         {SECTIONS.map((s, i) => (
-          <button
+          <h2
             key={s.label}
             className={`tab${activeSection === i ? ' active' : ''}`}
             onClick={() => setActiveSection(i)}
           >
             {s.label}
-          </button>
+          </h2>
         ))}
         
       </div>
