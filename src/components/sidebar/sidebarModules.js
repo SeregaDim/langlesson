@@ -43,7 +43,34 @@ const MODULES = [
     {label: '03', to: '/vbb', done: true},
     {label: '04', to: '/fddc', done: true},
    ],
+  },
+  {
+   icon:'📦',
+   iconBg:'rgba(99,102,241,0.12)',
+   name: '5) Nginx',
+   topics: [
+    {label: 'Comand nginx server', to: '/nginx', done: true },
+   ],
+  },
+  {
+   icon:'📦',
+   iconBg:'rgba(99,102,241,0.12)',
+   name: '6) Apache',
+   topics: [
+    {label: 'Comand apache server', to: '/apache', done: true },
+  
+   ],
+  },
+  {
+   icon:'📦',
+   iconBg:'rgba(99,102,241,0.12)',
+   name: '7) Git Comand',
+   topics: [
+    {label: 'Comand Git work project', to: '/gitcomand', done: true },
+  
+   ],
   }
+
 ];
 
 export default MODULES;

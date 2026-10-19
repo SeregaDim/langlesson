@@ -57,7 +57,7 @@
 .sidebar-scroll {
   flex: 1;
   overflow-y: auto;
-  padding: 8px 0;
+  padding: 45px 0;
 }
 
 /* Модуль */
@@ -194,4 +194,12 @@
     z-index: 140;
   }
   .sidebar-overlay.open { display: block; }
+
+.sidebar-scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding: 60px 0;
+}
+
+
 }

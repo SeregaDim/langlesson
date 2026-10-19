@@ -36,3 +36,14 @@
 .article-content table {
   border-collapse: collapse;
 }
+
+pre {
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 16px 0;
+}
+
+pre code.hljs {
+  border-radius: 12px;
+  padding: 16px;
+}
