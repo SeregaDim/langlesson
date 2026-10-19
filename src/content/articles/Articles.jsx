@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import KernelArticle from './Linux/KernelArticle';
+import FamiliesLinux from './Linux/FamiliesLinux';
 import './Articles.css';
 
 const SECTIONS = [
   { label: 'Что такое ядро и дистрибутив — разница', content: <KernelArticle /> },
-  { label: 'Семейства: Debian, Red Hat, Arch — родословная', content: <p>options article</p> },
+  { label: 'Семейства: Debian, Red Hat, Arch — родословная', content: <p><FamiliesLinux /></p> },
   { label: 'Дистрибутивы: Ubuntu, Debian, Fedora, CentOS, Arch, Rocky', content: <p>Текст практики...</p> },
   { label: 'Как выбрать дистрибутив под задачу', content: <p>Текст практики...</p> },
   { label: 'Установка Ubuntu — разметка диска, GRUB, первый запуск', content: <p>Текст практики...</p> },
